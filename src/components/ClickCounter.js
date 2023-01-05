@@ -4,8 +4,12 @@ import UpdatedComponent from "./withCounter";
 export class ClickCounter extends Component {
   render() {
     const { count, incrementCount } = this.props;
-    return <button onClick={incrementCount}>Clicked {count} times</button>;
+    return (
+      <button onClick={incrementCount}>
+        {this.props.name} Clicked {count} times
+      </button>
+    );
   }
 }
 
-export default UpdatedComponent(ClickCounter);
+export default UpdatedComponent(ClickCounter, 5);

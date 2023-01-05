@@ -5,7 +5,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <ClickCounter />
+        <ClickCounter name="Kris" />
         <HoverCounter />
       </div>
     );
